@@ -13,16 +13,18 @@ class SqlExercise
   end
 
   def limit_customers(number)
-    if number.is_a?(String) && number.upcase.include?("DROP TABLE")
+    if number.is_a?(String)
       puts "Don't fuck with my database..."
-    else database_connection.sql("SELECT * from customers LIMIT #{number}")
+    else
+      database_connection.sql("SELECT * from customers LIMIT #{number}")
     end
   end
 
   def order_customers(order)
     if order.is_a?(String) && order.upcase.include?("DROP TABLE")
       puts "Don't fuck with my database..."
-    else database_connection.sql("SELECT * from customers ORDER BY name #{order}")
+    else
+      database_connection.sql("SELECT * from customers ORDER BY name #{order}")
     end
   end
 
