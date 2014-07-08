@@ -13,11 +13,17 @@ class SqlExercise
   end
 
   def limit_customers(number)
-    database_connection.sql("SELECT * from customers LIMIT #{number}")
+    if number.is_a?(String) && number.upcase.include?("DROP TABLE")
+      puts "Don't fuck with my database..."
+    else database_connection.sql("SELECT * from customers LIMIT #{number}")
+    end
   end
 
   def order_customers(order)
-    database_connection.sql("SELECT * from customers ORDER BY name #{order}")
+    if order.is_a?(String) && order.upcase.include?("DROP TABLE")
+      puts "Don't fuck with my database..."
+    else database_connection.sql("SELECT * from customers ORDER BY name #{order}")
+    end
   end
 
   def id_and_name_for_customers
@@ -29,7 +35,11 @@ class SqlExercise
   end
 
   def find_item_by_name(item_name)
-    database_connection.sql("SELECT * from items WHERE name = '#{item_name}'").pop
+    if item_name.is_a?(String) && item_name.upcase.include?("DROP TABLE")
+      puts "Don't fuck with my database..."
+    else
+      database_connection.sql("SELECT * from items WHERE name = '#{item_name}'").pop
+    end
   end
 
   def count_customers
