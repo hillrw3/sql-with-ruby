@@ -69,7 +69,7 @@ class SqlExercise
   end
 
   def customers_that_bought_item(item)
-    database_connection.sql("SELECT customers.name, customers.id FROM customers JOIN orders ON customers.id = orders.customer_id JOIN orderitems ON orders.id = orderitems.order_id JOIN items ON orderitems.item_id = items.id WHERE items.name = '#{item}' GROUP BY customers.id")
+    database_connection.sql("SELECT customers.name as customer_name, customers.id FROM customers JOIN orders ON customers.id = orders.customer_id JOIN orderitems ON orders.id = orderitems.order_id JOIN items ON orderitems.item_id = items.id WHERE items.name = '#{item}' GROUP BY customers.id")
   end
 
 

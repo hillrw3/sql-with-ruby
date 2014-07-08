@@ -179,31 +179,31 @@ describe SqlExercise do
     it "returns the correct customer names and ids for customers that bought 'bike01'" do
       expected_customers = [
         {
-          "name" => "Tyrell Von DDS", "id" => "2"
+          "customer_name" => "Tyrell Von DDS", "id" => "2"
         },
         {
-          "name" => "Edna Hintz", "id" => "7"
+          "customer_name" => "Edna Hintz", "id" => "7"
         },
         {
-          "name" => "Evert Pfeffer", "id" => "4"
+          "customer_name" => "Evert Pfeffer", "id" => "4"
         },
         {
-          "name" => "Donato Rempel", "id" => "1"
+          "customer_name" => "Donato Rempel", "id" => "1"
         },
         {
-          "name" => "Coleman Prohaska Jr.", "id" => "8"
+          "customer_name" => "Coleman Prohaska Jr.", "id" => "8"
         },
         {
-          "name" => "Zelma Davis", "id" => "6"
+          "customer_name" => "Zelma Davis", "id" => "6"
         },
         {
-          "name" => "Elta Dicki", "id" => "5"
+          "customer_name" => "Elta Dicki", "id" => "5"
         },
         {
-          "name" => "Hulda Will III", "id" => "10"
+          "customer_name" => "Hulda Will III", "id" => "10"
         },
         {
-          "name" => "Wilhelmine Huels", "id" => "9"
+          "customer_name" => "Wilhelmine Huels", "id" => "9"
         },
       ]
 
@@ -213,31 +213,31 @@ describe SqlExercise do
     it "returns the correct customer names and ids for customers that bought 'boot01'" do
       expected_customers = [
         {
-          "name" => "Tyrell Von DDS", "id" => "2"
+          "customer_name" => "Tyrell Von DDS", "id" => "2"
         },
         {
-          "name" => "Edna Hintz", "id" => "7"
+          "customer_name" => "Edna Hintz", "id" => "7"
         },
         {
-          "name" => "Ms. Sofia Rowe", "id" => "3"
+          "customer_name" => "Ms. Sofia Rowe", "id" => "3"
         },
         {
-          "name" => "Donato Rempel", "id" => "1"
+          "customer_name" => "Donato Rempel", "id" => "1"
         },
         {
-          "name" => "Coleman Prohaska Jr.", "id" => "8"
+          "customer_name" => "Coleman Prohaska Jr.", "id" => "8"
         },
         {
-          "name" => "Hulda Will III", "id" => "10"
+          "customer_name" => "Hulda Will III", "id" => "10"
         },
         {
-          "name" => "Zelma Davis", "id" => "6"
+          "customer_name" => "Zelma Davis", "id" => "6"
         },
         {
-          "name" => "Elta Dicki", "id" => "5"
+          "customer_name" => "Elta Dicki", "id" => "5"
         },
         {
-          "name" => "Wilhelmine Huels", "id" => "9"
+          "customer_name" => "Wilhelmine Huels", "id" => "9"
         },
       ]
 
